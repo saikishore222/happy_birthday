@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>welcome</title>
+    <script>
+        function redirect()
+        {
+            var password=document.getElementById("mytext").value;
+            console.log(password);
+            if(password=="HBDSK16"){
+            window.location.href = "https://www.tutorialrepublic.com/";
+            }
+            else
+            {
+                alert("your password is wrong");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="pass">
+    <label>Enter a secret password:</label>
+     <br><br>
+    <input type="text" id="mytext">
+    <br>
+    <br>
+    <button type="submit" id="mybtn" onclick="redirect()">submit</button>
+    </div>
+</body>
+<html>
